@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;800&display=swap');
+
+:root {
+--color-pink: #FF70D9;
+--color-yellow: #EBFF00;
+--color-blue: #304571;
+--color-black: #000000;
+--color-white: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}

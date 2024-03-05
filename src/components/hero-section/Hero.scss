@@ -1,0 +1,127 @@
+.hero {
+  min-height: 100vh;
+  background-image: url('../../../public/bg-intro.jpg');
+  background-position: center;
+  background-size: cover;
+
+  @media(max-width: 768px) {
+    min-height: 100%;
+    transform: translate(0, -38px);
+  }
+
+  &__wrap {
+    position: relative;
+    z-index: 1;
+    // height: 100vh;
+
+    @media(max-width: 768px) {
+      height: 100%;
+    }
+  }
+
+  &__two-columns   {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /* outline: 10px solid red; */
+    color: var(--color-white);
+
+    @media(max-width: 768px) {
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      gap: 30px;
+    }
+  }
+
+  &__text-section {
+    width: 693px;
+    display: flex;
+    flex-direction: column;
+
+    @media(max-width: 768px) {
+      width: 292px;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 100%;
+    
+    span {
+      color: var(--color-pink);
+    }
+
+    @media(max-width: 768px) {
+      font-size: 36px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 100%;
+    padding-top: 22px;
+    
+    span {
+      color: var(--color-yellow);
+    }
+
+    @media(max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  &__button {
+    width: 191px;
+    padding: 14px 0;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 40px;
+    border-color: var(--color-yellow);
+    color: var(--color-yellow);
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 22px;
+    margin-bottom: 44px;
+
+    @media(max-width: 768px) {
+      font-size: 16px;
+      padding: 7px 0;
+    }
+  }
+
+  &__button--primary {
+    border-color: transparent;
+    color: var(--color-black);
+    background-color: var(--color-yellow);
+  }
+
+  &__image {
+    width: 327px;
+    height: 367px;
+
+    @media(max-width: 768px) {
+      width: 300px;
+      height: 336px;
+    }
+  }
+}
+
+.hero:before {
+  position: absolute;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#000),
+    to(rgba(0, 0, 0, 0))
+  );
+  background: linear-gradient(to right, #000, rgba(0, 0, 0, 0));
+  content: '';
+  inset: 0;
+}
+
