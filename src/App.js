@@ -1,4 +1,5 @@
 import './App.scss';
+import Footer from './components/footer/Footer';
 import Navbar from './components/header/Header';
 import Hero from './components/hero-section/Hero';
 import Offers from './components/offers/Offers';
@@ -9,49 +10,7 @@ function App() {
       <Navbar />
       <Hero />
       <Offers />
-      {/* <section>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-        distinctio consequatur neque aliquid. Harum nemo ad laudantium vero
-        fugiat sit voluptatibus molestiae, quis dolorem facere, sunt veniam
-        corporis repellendus dolorum. Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Omnis distinctio consequatur neque aliquid. Harum nemo
-        ad laudantium vero fugiat sit voluptatibus molestiae, quis dolorem
-        facere, sunt veniam corporis repellendus dolorum. Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Omnis distinctio consequatur neque
-        aliquid. Harum nemo ad laudantium vero fugiat sit voluptatibus
-        molestiae, quis dolorem facere, sunt veniam corporis repellendus
-        dolorum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-        distinctio consequatur neque aliquid. Harum nemo ad laudantium vero
-        fugiat sit voluptatibus molestiae, quis dolorem facere, sunt veniam
-        corporis repellendus dolorum.Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Omnis distinctio consequatur neque aliquid. Harum nemo
-        ad laudantium vero fugiat sit voluptatibus molestiae, quis dolorem
-        facere, sunt veniam corporis repellendus dolorum.Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Omnis distinctio consequatur neque
-        aliquid. Harum nemo ad laudantium vero fugiat sit voluptatibus
-        molestiae, quis dolorem facere, sunt veniam corporis repellendus
-        dolorum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-        distinctio consequatur neque aliquid. Harum nemo ad laudantium vero
-        fugiat sit voluptatibus molestiae, quis dolorem facere, sunt veniam
-        corporis repellendus dolorum.Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Omnis distinctio consequatur neque aliquid. Harum nemo
-        ad laudantium vero fugiat sit voluptatibus molestiae, quis dolorem
-        facere, sunt veniam corporis repellendus dolorum.Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Omnis distinctio consequatur neque
-        aliquid. Harum nemo ad laudantium vero fugiat sit voluptatibus
-        molestiae, quis dolorem facere, sunt veniam corporis repellendus
-        dolorum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-        distinctio consequatur neque aliquid. Harum nemo ad laudantium vero
-        fugiat sit voluptatibus molestiae, quis dolorem facere, sunt veniam
-        corporis repellendus dolorum.Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Omnis distinctio consequatur neque aliquid. Harum nemo
-        ad laudantium vero fugiat sit voluptatibus molestiae, quis dolorem
-        facere, sunt veniam corporis repellendus dolorum.Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Omnis distinctio consequatur neque
-        aliquid. Harum nemo ad laudantium vero fugiat sit voluptatibus
-        molestiae, quis dolorem facere, sunt veniam corporis repellendus
-        dolorum.
-      </section> */}
+      <Footer />
     </>
   );
 }

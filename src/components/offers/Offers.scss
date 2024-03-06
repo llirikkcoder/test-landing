@@ -4,6 +4,7 @@
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr;
+  padding-top: 40px;
 
   &__wrap {
     background: linear-gradient(196deg, #0D1E48 0%, #304571 100%);
@@ -14,8 +15,20 @@
   }
 
   &__title {
-    padding: 58px 0 40px 0;
+    padding: 58px 0 0 0;
     color: $color-white;
+    font-size: 32px;
+
+
+    @media (max-width: 1248px) {
+      padding-top: 55px;
+      font-size: 24px;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 50px;
+      font-size: 18px;
+    }
   }
 
   &__item {

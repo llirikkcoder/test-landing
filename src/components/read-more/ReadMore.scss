@@ -1,0 +1,63 @@
+.read-more {
+  &__wrap {
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    @media(max-width: 1248px) {
+      font-size: 16px;
+    }
+
+    @media(max-width: 767px) {
+      font-size: 14px;
+    }
+
+    .read-more__target {
+      opacity: 0;
+      max-height: 0;
+      font-size: 0;
+      transition: .25s ease;
+
+      // при раскрытии контента
+      .read-more__state:checked ~ & {
+        opacity: 1;
+        font-size: inherit;
+        max-height: 999em;
+      }
+    }
+
+    .read-more__state ~ .read-more__trigger:before {
+      content: 'Read more';
+    }
+
+    .read-more__state:checked ~ .read-more__trigger:before {
+      content: 'Show less';
+    }
+  }
+
+  &__trigger {
+    cursor: pointer;
+    display: inline-block;
+    color: yellow;
+    font-size: .9em;
+    line-height: 2;
+    border-radius: .25em;
+    margin-bottom: 20px;
+
+    &:before {
+      content: 'Read more';
+    }
+  }
+
+  &__state:checked ~ &__trigger:before {
+    content: 'Show less';
+  }
+
+  &__state {
+    height: 0;
+    overflow: hidden;
+  }
+}
+

@@ -6,7 +6,7 @@
   font-size: 22px;
   font-weight: 700;
   border-radius: 40px;
-  border-color: $color-yellow;
+  border: 2px solid $color-yellow;
   background-color: transparent;
   color: $color-yellow;
   cursor: pointer;
@@ -16,6 +16,7 @@
   @media(max-width: 768px) {
     font-size: 16px;
     padding: 7px 0;
+    margin-bottom: 40px;
   }
 
   &--primary {
