@@ -4,17 +4,17 @@ import './Offers.scss';
 const Offers = () => {
   return (
     <div className='offers'>
-      <div className='offers__item offers__item--full-width'>
-        <h2 className='offers__item-title'>Offer 1</h2>
+      <div className='offer offer--full-width'>
+        <h2 className='offer__title'>Offer 1</h2>
       </div>
-      <div className='offers__item'>
-        <h2 className='offers__item-title'>Offer 2</h2>
+      <div className='offer'>
+        <h2 className='offer__title'>Offer 2</h2>
       </div>
-      <div className='offers__item'>
-        <h2 className='offers__item-title'>Offer 3</h2>
+      <div className='offer'>
+        <h2 className='offer__title'>Offer 3</h2>
       </div>
-      <div className='offers__item offers__item--full-width'>
-        <h2 className='offers__item-title'>Offer 4</h2>
+      <div className='offer offer--full-width'>
+        <h2 className='offer__title'>Offer 4</h2>
       </div>
     </div>
   );
