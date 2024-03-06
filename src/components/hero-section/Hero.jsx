@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.scss';
-import Container from '../Container';
+import Container from '../container/Container';
+import Button from '../button/Button';
 
 const Hero = () => {
   return (
@@ -15,9 +16,7 @@ const Hero = () => {
             <div className='hero__subtitle'>
               Where the possibilities are <span>endless!</span>
             </div>
-            <button className='hero__button hero__button--primary'>
-              Learn more
-            </button>
+            <Button text='Learn more' filled={true} />
           </div>
           <img className='hero__image' alt='hero' src='images/hero-earth.png' />
         </div>

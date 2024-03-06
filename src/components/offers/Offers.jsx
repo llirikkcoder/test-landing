@@ -1,18 +1,31 @@
 import React from 'react';
-import Container from '../Container';
+import Container from '../container/Container';
+import OfferCard from './offer-card/OfferCard';
+
 import './Offers.scss';
 
-const Card = ({ title, subtitle, buttonText }) => {
-  return (
-    <div className='hero__text-section'>
-      <div className='hero__title'>{title}</div>
-      <div className='hero__subtitle'>{subtitle}</div>
-      <button className='hero__button hero__button--primary'>
-        {buttonText}
-      </button>
-    </div>
-  );
-};
+const CARDS_DATA = [
+  {
+    title: 'Move the borders of reality!',
+    subtitle: "Go on a space adventure - it's possible with us!",
+    buttonText: 'First Button',
+  },
+  {
+    title: 'Second Title',
+    subtitle: 'Second Subtitle',
+    buttonText: 'Second Button',
+  },
+  {
+    title: 'Third Title',
+    subtitle: 'Third Subtitle',
+    buttonText: 'Third Button',
+  },
+  {
+    title: 'Fourth Title',
+    subtitle: 'Fourth Subtitle',
+    buttonText: 'Fourth Button',
+  },
+];
 
 const Offers = () => {
   return (
@@ -20,8 +33,13 @@ const Offers = () => {
       <Container>
         <h1 className='offers__title'>Offers</h1>
         <div className='offers'>
-          <div className='offers__item offers__item--full-width offers__item--offer1'>
-            {/* <Card title='Offer 1' subtitle='Subtitle' buttonText='Button' /> */}
+          <div className='offers__item offers__item--full-width'>
+            <OfferCard
+              image={'images/card-bg1.jpg'}
+              title={CARDS_DATA[0].title}
+              subtitle={CARDS_DATA[0].subtitle}
+              buttonText={CARDS_DATA[0].buttonText}
+            />
           </div>
           <div className='offers__item offers__item--offer2'>
             <h2 className='offers__item-title'>Offer 2</h2>

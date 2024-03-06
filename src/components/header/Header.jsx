@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
-import Container from '../Container';
+import Container from '../container/Container';
 
 import './Header.scss';
+
+const MENU_ITEMS = [
+  { label: 'Home', link: '#' },
+  { label: 'Products', link: '#' },
+  { label: 'Cart', link: '#', icon: '/images/cart.svg' },
+];
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,12 +15,6 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  const menuItems = [
-    { label: 'Home', link: '#' },
-    { label: 'Products', link: '#' },
-    { label: 'Cart', link: '#', icon: '/images/cart.svg' },
-  ];
 
   return (
     <header className='header'>
@@ -25,10 +25,12 @@ const Navbar = () => {
             className={`header__nav ${isMenuOpen ? 'header__nav--open' : ''}`}
           >
             <ul className='header__menu'>
-              {menuItems.map((item, index) => (
+              {MENU_ITEMS.map((item, index) => (
                 <li key={index} className='header__menu-item'>
                   {item.icon ? (
-                    <img class='header__nav-link' src={item.icon} />
+                    <a href={item.link}>
+                      <img class='header__nav-link' src={item.icon} />
+                    </a>
                   ) : (
                     <a href={item.link}>{item.label}</a>
                   )}
