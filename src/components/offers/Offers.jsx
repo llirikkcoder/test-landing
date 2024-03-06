@@ -21,7 +21,7 @@ const Offers = () => {
         <h1 className='offers__title'>Offers</h1>
         <div className='offers'>
           <div className='offers__item offers__item--full-width offers__item--offer1'>
-            <Card title='Offer 1' subtitle='Subtitle' buttonText='Button' />
+            {/* <Card title='Offer 1' subtitle='Subtitle' buttonText='Button' /> */}
           </div>
           <div className='offers__item offers__item--offer2'>
             <h2 className='offers__item-title'>Offer 2</h2>

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import BurgerMenu from './BurgerMenu';
 import Container from '../Container';
 
-import './Navbar.scss';
+import './Header.scss';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,20 +35,17 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            {/* <div class='header__nav header__menu'>
-              <a class='header__nav-link' href='#'>
-                Home
-              </a>
-              <a class='header__nav-link' href='#'>
-                Products
-              </a>
-              <a class='header__nav-link header__nav-link--cart' href='#'>
-                <img src='/images/cart.svg' alt='cart' />
-              </a>
-            </div> */}
           </nav>
           <button className='header__burger-menu' onClick={toggleMenu}>
-            <BurgerMenu isOpen={isMenuOpen} />
+            <div
+              className={`header__burger ${
+                isMenuOpen ? 'header__burger--open' : ''
+              }`}
+            >
+              <div className='header__burger-line'></div>
+              <div className='header__burger-line'></div>
+              <div className='header__burger-line'></div>
+            </div>
           </button>
         </div>
       </Container>

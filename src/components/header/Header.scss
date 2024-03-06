@@ -1,4 +1,4 @@
-/* @import "../../styles/variables"; */
+@import "../../styles/variables";
 
 .header {
   position: fixed;
@@ -7,19 +7,13 @@
   top: 0;
   left: 0;
   height: 80px;
-  background-color: var(--color-black);
-  /* @media (max-width: 768px) {
-    padding: 0 21px;
-  } */
+  background-color: $color-black;
 
   &__wrap {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // @media (min-width: 768px) {
-    //   padding: 0 21px;
-    // }
   }
 
   &__nav {
@@ -75,7 +69,7 @@
       top: 100%;
       left: 0;
       width: 100%;
-      background-color: var(--color-black);
+      background-color: $color-black;
       padding: 10px;
     }
   }
@@ -92,23 +86,24 @@
     margin-bottom: 10px;
     font-size: 18px;
   }
+
+  &__burger {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+    &-line {
+      width: 100%;
+      height: 3px;
+      background-color: white;
+    }
+
+    &--open {
+      transform: rotate(90deg);
+    }
+  }
 }
 
-.burger-menu {
-  width: 30px;
-  height: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-
-  &__line {
-    width: 100%;
-    height: 3px;
-    background-color: white;
-  }
-
-  &--open {
-    transform: rotate(90deg);
-  }
-}

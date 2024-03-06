@@ -1,39 +1,34 @@
+@import "../../styles/variables"; 
+
 .hero {
   min-height: 100vh;
-  background-image: url('../../../public/bg-intro.jpg');
+  background-image: linear-gradient(to right, #000, rgba(0, 0, 0, 0)), url('../../../public/bg-intro.jpg');
   background-position: center;
   background-size: cover;
+  overflow: hidden;
+  background-blend-mode: multiply;
 
   @media(max-width: 768px) {
     min-height: 100%;
-    transform: translate(0, -38px);
+    // transform: translate(0, -38px);
   }
 
   &__wrap {
     position: relative;
-    padding: 180px 0 0 0;
     z-index: 1;
-    // height: 100vh;
-
-    @media(max-width: 768px) {
-      height: 100%;
-      padding:0;
-    }
-  }
-
-  &__two-columns   {
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
     width: 100%;
-    /* outline: 10px solid red; */
-    color: var(--color-white);
+    color: $color-white;
 
     @media(max-width: 768px) {
       flex-direction: column-reverse;
       justify-content: flex-end;
       gap: 30px;
+      height: 100%;
+      padding:0;
     }
   }
 
@@ -55,7 +50,7 @@
     line-height: 100%;
     
     span {
-      color: var(--color-pink);
+      color: $color-pink;
     }
 
     @media(max-width: 1248px) {
@@ -74,7 +69,7 @@
     padding-top: 22px;
     
     span {
-      color: var(--color-yellow);
+      color: $color-yellow;
     }
 
     @media(max-width: 1248px) {
@@ -92,8 +87,8 @@
     font-size: 22px;
     font-weight: 700;
     border-radius: 40px;
-    border-color: var(--color-yellow);
-    color: var(--color-yellow);
+    border-color: $color-yellow;
+    color: $color-yellow;
     background-color: transparent;
     cursor: pointer;
     margin-top: 22px;
@@ -107,8 +102,8 @@
 
   &__button--primary {
     border-color: transparent;
-    color: var(--color-black);
-    background-color: var(--color-yellow);
+    color: $color-black;
+    background-color: $color-yellow;
   }
 
   &__image {
@@ -126,17 +121,5 @@
   }
 }
 
-.hero:before {
-  position: absolute;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#000),
-    to(rgba(0, 0, 0, 0))
-  );
-  background: linear-gradient(to right, #000, rgba(0, 0, 0, 0));
-  content: '';
-  inset: 0;
-}
+
 

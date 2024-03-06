@@ -1,5 +1,5 @@
 import './App.scss';
-import Navbar from './components/navbar/Navbar';
+import Navbar from './components/header/Header';
 import Hero from './components/hero-section/Hero';
 import Offers from './components/offers/Offers';
 
