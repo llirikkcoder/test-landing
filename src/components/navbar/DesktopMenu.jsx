@@ -1,5 +1,3 @@
-// DesktopMenu.js
-
 import React from 'react';
 
 const DesktopMenu = () => {
@@ -10,10 +8,10 @@ const DesktopMenu = () => {
   ];
 
   return (
-    <nav className="header__nav">
-      <ul className="header__menu">
+    <nav className='header__nav'>
+      <ul className='header__menu'>
         {menuItems.map((item, index) => (
-          <li key={index} className="header__menu-item">
+          <li key={index} className='header__menu-item'>
             <a href={item.link}>{item.label}</a>
           </li>
         ))}
