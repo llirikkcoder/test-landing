@@ -11,11 +11,13 @@
 
   &__wrap {
     position: relative;
+    padding: 180px 0 0 0;
     z-index: 1;
     // height: 100vh;
 
     @media(max-width: 768px) {
       height: 100%;
+      padding:0;
     }
   }
 
@@ -39,6 +41,7 @@
     width: 693px;
     display: flex;
     flex-direction: column;
+    // margin-left: 20px;
 
     @media(max-width: 768px) {
       width: 292px;
@@ -55,6 +58,10 @@
       color: var(--color-pink);
     }
 
+    @media(max-width: 1248px) {
+      font-size: 48px;
+    }
+
     @media(max-width: 768px) {
       font-size: 36px;
     }
@@ -68,6 +75,10 @@
     
     span {
       color: var(--color-yellow);
+    }
+
+    @media(max-width: 1248px) {
+      font-size: 22px;
     }
 
     @media(max-width: 768px) {
@@ -107,6 +118,10 @@
     @media(max-width: 768px) {
       width: 300px;
       height: 336px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      transform: translate(72px, 0);
     }
   }
 }

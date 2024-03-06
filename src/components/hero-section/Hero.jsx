@@ -10,14 +10,21 @@ const Hero = () => {
           <div className='hero__two-columns'>
             <div className='hero__text-section'>
               <div className='hero__title'>
-                Discover the vast expanses of <span>space</span>
+                Discover the vast
+                <br /> expanses of <span>space</span>
               </div>
               <div className='hero__subtitle'>
                 Where the possibilities are <span>endless!</span>
               </div>
-              <button className='hero__button hero__button--primary'>Learn more</button>
+              <button className='hero__button hero__button--primary'>
+                Learn more
+              </button>
             </div>
-            <img className='hero__image' alt='hero' src='images/hero.png' />
+            <img
+              className='hero__image'
+              alt='hero'
+              src='images/hero-earth.png'
+            />
           </div>
 
           {/* <div className='frame1248-banner'>
