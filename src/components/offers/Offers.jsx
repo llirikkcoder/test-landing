@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../container/Container';
 import OfferCard from './offer-card/OfferCard';
-import ReadMore from '../read-more/ReadMore';
+import Collapse from '../collapse/Collapse';
 
 import './Offers.scss';
 
@@ -36,7 +36,7 @@ const CARDS_DATA = [
 
 const Offers = () => {
   return (
-    <div className='offers__wrap'>
+    <div id='offers' className='offers__wrap'>
       <Container>
         <h1 className='offers__title'>Offers</h1>
         <div className='offers'>
@@ -60,7 +60,7 @@ const Offers = () => {
           })}
         </div>
         <h1 className='offers__title'>Embark on a space journey</h1>
-        <ReadMore />
+        <Collapse />
       </Container>
     </div>
   );

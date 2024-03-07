@@ -1,7 +1,7 @@
 import React from 'react';
-import './ReadMore.scss';
+import './Collapse.scss';
 
-const ReadMore = () => {
+const Collapse = () => {
   return (
     <div className='read-more'>
       <input type='checkbox' id='read-more-checkbox' className='read-more__state' />
@@ -34,5 +34,5 @@ const ReadMore = () => {
   );
 };
 
-export default ReadMore;
+export default Collapse;
 

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;800&display=swap'); 
-@import "./styles/variables"; 
+@import "./styles/variables";
+
+* {
+  scroll-behavior: smooth !important;
+}
 
 body {
   margin: 0;

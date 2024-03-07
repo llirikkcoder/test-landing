@@ -5,10 +5,10 @@ import './Header.scss';
 
 const MENU_ITEMS = [
   { label: 'Home', link: '#' },
-  { label: 'Products', link: '#' },
+  { label: 'Products', link: '#offers' },
   {
     label: 'Cart',
-    link: '#',
+    link: '#cart',
     icon: '/images/cart.svg',
     iconHover: '/images/cart-hover.svg',
   },
