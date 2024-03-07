@@ -1,13 +1,15 @@
+@import "../../styles/variables"; 
+
 .container {
   max-width: 1088px;
   height: 100%;
   margin: 0 auto;
 
-  @media (max-width: 1248px) {
+  @media (max-width: ($screen-lg - 1)) {
     padding:0 30px;
   }
 
-  @media (max-width: 360px) {
+  @media (max-width: ($screen-sm - 1)) {
     padding:0 20px;
   }
 }

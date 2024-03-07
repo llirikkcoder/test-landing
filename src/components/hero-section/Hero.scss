@@ -8,7 +8,7 @@
   overflow: hidden;
   background-blend-mode: multiply;
 
-  @media(max-width: 768px) {
+  @media (max-width: ($screen-md - 1)) {
     min-height: 100%;
     // transform: translate(0, -38px);
   }
@@ -23,7 +23,7 @@
     width: 100%;
     color: $color-white;
 
-    @media(max-width: 768px) {
+    @media (max-width: ($screen-md - 1)) {
       flex-direction: column-reverse;
       justify-content: flex-end;
       gap: 30px;
@@ -38,7 +38,7 @@
     flex-direction: column;
     // margin-left: 20px;
 
-    @media(max-width: 768px) {
+    @media (max-width: ($screen-md - 1)) {
       width: 292px;
       align-items: center;
     }
@@ -53,11 +53,11 @@
       color: $color-pink;
     }
 
-    @media(max-width: 1248px) {
+    @media (max-width: ($screen-lg - 1)) {
       font-size: 48px;
     }
 
-    @media(max-width: 768px) {
+    @media (max-width: ($screen-md - 1)) {
       font-size: 36px;
     }
   }
@@ -72,11 +72,11 @@
       color: $color-yellow;
     }
 
-    @media(max-width: 1248px) {
+    @media (max-width: ($screen-lg - 1)) {
       font-size: 22px;
     }
 
-    @media(max-width: 768px) {
+    @media (max-width: ($screen-md - 1)) {
       font-size: 16px;
     }
   }
@@ -94,7 +94,7 @@
     margin-top: 22px;
     margin-bottom: 44px;
 
-    @media(max-width: 768px) {
+    @media (max-width: ($screen-md - 1)) {
       font-size: 16px;
       padding: 7px 0;
     }
@@ -110,7 +110,7 @@
     width: 327px;
     height: 367px;
 
-    @media(max-width: 768px) {
+    @media (max-width: ($screen-md - 1)) {
       width: 300px;
       height: 336px;
     }
