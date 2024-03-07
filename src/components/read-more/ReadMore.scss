@@ -49,6 +49,10 @@
     &:before {
       content: 'Read more';
     }
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   &__state:checked ~ &__trigger:before {

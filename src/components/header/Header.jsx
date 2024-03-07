@@ -6,11 +6,25 @@ import './Header.scss';
 const MENU_ITEMS = [
   { label: 'Home', link: '#' },
   { label: 'Products', link: '#' },
-  { label: 'Cart', link: '#', icon: '/images/cart.svg' },
+  {
+    label: 'Cart',
+    link: '#',
+    icon: '/images/cart.svg',
+    iconHover: '/images/cart-hover.svg',
+  },
 ];
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -26,10 +40,21 @@ const Navbar = () => {
           >
             <ul className='header__menu'>
               {MENU_ITEMS.map((item, index) => (
-                <li key={index} className='header__menu-item'>
+                <li
+                  key={index}
+                  className='header__menu-item'
+                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={handleMouseLeave}
+                >
                   {item.icon ? (
                     <a href={item.link}>
-                      <img class='header__nav-link' src={item.icon} />
+                      <img
+                        className='header__nav-link'
+                        src={
+                          hoveredIndex === index ? item.iconHover : item.icon
+                        }
+                        alt='Icon'
+                      />
                     </a>
                   ) : (
                     <a href={item.link}>{item.label}</a>

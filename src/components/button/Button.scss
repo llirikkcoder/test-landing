@@ -24,6 +24,10 @@
     color: $color-black;
     background-color: $color-yellow;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
   

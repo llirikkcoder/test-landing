@@ -49,6 +49,13 @@
   &__menu-item {
     margin-right: 20px;
     font-size: 18px;
+
+    &:hover {
+      background: linear-gradient(98deg, #EBFF00 18.56%, #FF70D9 76.02%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   &__burger-menu {
