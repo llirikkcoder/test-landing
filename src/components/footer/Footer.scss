@@ -2,7 +2,6 @@
   height: 127px;
   background-color: black;
 
-
   &__container {
     display: flex;
     flex-direction: column;
@@ -12,7 +11,7 @@
   }
 
   &__text {
-    color: yellow;
     font-size: 18px;
+    color: yellow;
   }
 }

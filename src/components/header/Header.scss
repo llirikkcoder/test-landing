@@ -3,17 +3,17 @@
 .header {
   position: fixed;
   z-index: 999;
-  width: 100%;
   top: 0;
   left: 0;
+  width: 100%;
   height: 80px;
   background-color: $color-black;
 
   &__wrap {
-    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
   }
 
   &__nav {
@@ -26,19 +26,19 @@
   }
 
   &__nav-link {
-    color: #fff;
-    text-decoration: none;
+    cursor: pointer;
     font-size: 18px;
     font-weight: 700;
-    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
   }
 
  &__menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 50px;
+   display: flex;
+   gap: 50px;
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
     @media (max-width: ($screen-md - 1)) {
       flex-direction: column;
       align-items: center;
@@ -50,20 +50,20 @@
     margin-right: 20px;
     font-size: 18px;
 
-    &:hover {
-      background: linear-gradient(98deg, #EBFF00 18.56%, #FF70D9 76.02%);
-      background-clip: text;
+    &:hover,
+    &:active {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      background: linear-gradient(98deg, #EBFF00 18.56%, #FF70D9 76.02%);
+      background-clip: text;
     }
   }
 
   &__burger-menu {
     display: none;
-    cursor: pointer;
     background-color: transparent;
+    cursor: pointer;
     border: none;
-
     @media (max-width: ($screen-md - 1)) {
       display: block;
     }
@@ -76,17 +76,17 @@
       top: 100%;
       left: 0;
       width: 100%;
-      background-color: $color-black;
       padding: 10px;
+      background-color: $color-black;
     }
   }
 
   &__menu--mobile {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
   }
 
   &__menu-item--mobile {
@@ -95,13 +95,12 @@
   }
 
   &__burger {
-    width: 30px;
-    height: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 30px;
+    height: 20px;
     cursor: pointer;
-
     &-line {
       width: 100%;
       height: 3px;
@@ -112,5 +111,32 @@
       transform: rotate(90deg);
     }
   }
+
+  &__cross {
+    width: 24px;
+    height: 24px;
+    position: relative;
+
+    .header__cross-line {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+
+      &:first-child {
+        transform: rotate(55deg);
+      }
+
+      &:last-child {
+        transform: rotate(-55deg);
+      }
+    }
+  }
 }
+
+
+
 

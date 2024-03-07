@@ -1,26 +1,25 @@
 @import "../../styles/variables"; 
 
 .hero {
+  overflow: hidden;
   min-height: 100vh;
   background-image: linear-gradient(to right, #000, rgba(0, 0, 0, 0)), url('../../../public/bg-intro.jpg');
   background-position: center;
   background-size: cover;
-  overflow: hidden;
   background-blend-mode: multiply;
 
   @media (max-width: ($screen-md - 1)) {
     min-height: 100%;
-    // transform: translate(0, -38px);
   }
 
   &__wrap {
-    position: relative;
-    z-index: 1;
-    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 1;
     width: 100%;
+    height: 100vh;
     color: $color-white;
 
     @media (max-width: ($screen-md - 1)) {
@@ -33,14 +32,13 @@
   }
 
   &__text-section {
-    width: 693px;
     display: flex;
     flex-direction: column;
-    // margin-left: 20px;
+    width: 693px;
 
     @media (max-width: ($screen-md - 1)) {
-      width: 292px;
       align-items: center;
+      width: 292px;
     }
   }
 
@@ -48,7 +46,6 @@
     font-size: 72px;
     font-weight: 800;
     line-height: 100%;
-    
     span {
       color: $color-pink;
     }
@@ -63,11 +60,10 @@
   }
 
   &__subtitle {
+    padding-top: 22px;
     font-size: 32px;
     font-weight: 800;
     line-height: 100%;
-    padding-top: 22px;
-    
     span {
       color: $color-yellow;
     }
@@ -83,33 +79,32 @@
 
   &__button {
     width: 191px;
-    padding: 14px 0;
-    font-size: 22px;
-    font-weight: 700;
-    border-radius: 40px;
-    border-color: $color-yellow;
-    color: $color-yellow;
-    background-color: transparent;
-    cursor: pointer;
     margin-top: 22px;
     margin-bottom: 44px;
+    padding: 14px 0;
+    background-color: transparent;
+    cursor: pointer;
+    border-color: $color-yellow;
+    border-radius: 40px;
+    font-size: 22px;
+    font-weight: 700;
+    color: $color-yellow;
 
     @media (max-width: ($screen-md - 1)) {
-      font-size: 16px;
       padding: 7px 0;
+      font-size: 16px;
     }
   }
 
   &__button--primary {
+    background-color: $color-yellow;
     border-color: transparent;
     color: $color-black;
-    background-color: $color-yellow;
   }
 
   &__image {
     width: 327px;
     height: 367px;
-
     @media (max-width: ($screen-md - 1)) {
       width: 300px;
       height: 336px;

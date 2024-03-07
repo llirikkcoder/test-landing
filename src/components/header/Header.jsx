@@ -69,9 +69,18 @@ const Navbar = () => {
                 isMenuOpen ? 'header__burger--open' : ''
               }`}
             >
-              <div className='header__burger-line'></div>
-              <div className='header__burger-line'></div>
-              <div className='header__burger-line'></div>
+              {!isMenuOpen ? (
+                <>
+                  <div className='header__burger-line'></div>
+                  <div className='header__burger-line'></div>
+                  <div className='header__burger-line'></div>
+                </>
+              ) : (
+                <div className='header__cross'>
+                  <div className='header__cross-line'></div>
+                  <div className='header__cross-line'></div>
+                </div>
+              )}
             </div>
           </button>
         </div>

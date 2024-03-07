@@ -2,12 +2,11 @@
 
 .read-more {
   &__wrap {
-    color: white;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-
+    color: white;
     @media (max-width: ($screen-lg - 1)) {
       font-size: 16px;
     }
@@ -19,14 +18,12 @@
     .read-more__target {
       opacity: 0;
       max-height: 0;
-      font-size: 0;
       transition: .25s ease;
-
-      // при раскрытии контента
+      font-size: 0;
       .read-more__state:checked ~ & {
         opacity: 1;
-        font-size: inherit;
         max-height: 999em;
+        font-size: inherit;
       }
     }
 
@@ -40,14 +37,13 @@
   }
 
   &__trigger {
-    cursor: pointer;
     display: inline-block;
-    color: yellow;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: .25em;
     font-size: .9em;
     line-height: 2;
-    border-radius: .25em;
-    margin-bottom: 20px;
-
+    color: yellow;
     &:before {
       content: 'Read more';
     }
@@ -62,8 +58,8 @@
   }
 
   &__state {
-    height: 0;
     overflow: hidden;
+    height: 0;
   }
 }
 

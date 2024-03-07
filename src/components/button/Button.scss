@@ -2,27 +2,27 @@
 
 .button {
   width: 191px;
-  padding: 14px 0;
-  font-size: 22px;
-  font-weight: 700;
-  border-radius: 40px;
-  border: 2px solid $color-yellow;
-  background-color: transparent;
-  color: $color-yellow;
-  cursor: pointer;
   margin-top: 22px;
   margin-bottom: 44px;
+  padding: 14px 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid $color-yellow;
+  border-radius: 40px;
+  font-size: 22px;
+  font-weight: 700;
+  color: $color-yellow;
 
   @media (max-width: ($screen-md - 1)) {
-    font-size: 16px;
-    padding: 7px 0;
     margin-bottom: 40px;
+    padding: 7px 0;
+    font-size: 16px;
   }
 
   &--primary {
+    background-color: $color-yellow;
     border-color: transparent;
     color: $color-black;
-    background-color: $color-yellow;
   }
 
   &:hover {

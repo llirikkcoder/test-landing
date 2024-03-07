@@ -1,4 +1,3 @@
-import './App.scss';
 import Footer from './components/footer/Footer';
 import Navbar from './components/header/Header';
 import Hero from './components/hero-section/Hero';

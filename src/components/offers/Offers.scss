@@ -2,10 +2,9 @@
 
 .offers {
   display: grid;
-  grid-gap: 20px;
   grid-template-columns: 1fr;
+  grid-gap: 20px;
   padding-top: 40px;
-
   &__wrap {
     background: linear-gradient(196deg, #0D1E48 0%, #304571 100%);
   }
@@ -16,10 +15,8 @@
 
   &__title {
     padding: 58px 0 0 0;
-    color: $color-white;
     font-size: 32px;
-
-
+    color: $color-white;
     @media (max-width: ($screen-lg - 1)) {
       padding-top: 55px;
       font-size: 24px;
@@ -32,13 +29,13 @@
   }
 
   &__item {
-    height: 350px;
-    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    height: 350px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(15, 20, 32, 0.79) 100%);
+    background-color: #f0f0f0;
+    border-radius: 10px;
 
     @media (min-width: $screen-lg) {
       &--full-width {
@@ -58,8 +55,8 @@
 
     &--offer2 {
       background-image: url('../../../public/images/card-bg2.jpg');
-      background-size: cover;
       background-position: center;
+      background-size: cover;
     }
 
     &--offer3 {
